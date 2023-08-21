@@ -3,17 +3,11 @@ import meter2 from '../assets/img/meter2.svg';
 import meter3 from '../assets/img/meter3.svg';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-<<<<<<< Updated upstream
-=======
-import arrow1 from '../assets/img/arrow1.svg';
-import arrow2 from '../assets/img/arrow2.svg';
->>>>>>> Stashed changes
 import colorSharp from '../assets/img/color-sharp.png';
 
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },
@@ -39,15 +33,9 @@ export const Skills = () => {
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
               <p>
-<<<<<<< Updated upstream
                 I was Scrum master in a project and led -7 person whicn
                 <br></br>development FoodSta project successfully launching this
                 project in 2022.
-=======
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.<br></br> Lorem Ipsum has been the industry's standard
-                dummy text.
->>>>>>> Stashed changes
               </p>
               <Carousel
                 responsive={responsive}
@@ -55,7 +43,6 @@ export const Skills = () => {
                 className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">
-<<<<<<< Updated upstream
                   <img src={meter1} alt="" />
                   <h5>HTML SASS JS REACT</h5>
                 </div>
@@ -70,33 +57,14 @@ export const Skills = () => {
                 <div className="item">
                   <img src={meter1} alt="" />
                   <h5>GitHub</h5>
-=======
-                  <img src={meter1} alt="Image" />
-                  <h5>Web Development</h5>
-                </div>
-                <div className="item">
-                  <img src={meter2} alt="Image" />
-                  <h5>Brand Identity</h5>
-                </div>
-                <div className="item">
-                  <img src={meter3} alt="Image" />
-                  <h5>Logo Design</h5>
-                </div>
-                <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Web Development</h5>
->>>>>>> Stashed changes
                 </div>
               </Carousel>
             </div>
           </div>
         </div>
       </div>
-<<<<<<< Updated upstream
       <img className="background-image-left" src={colorSharp} alt="" />
-=======
-      <img className="background-image-left" src={colorSharp} alt="Image" />
->>>>>>> Stashed changes
+      <img className="background-image-left" src={colorSharp} alt="" />
     </section>
   );
 };
