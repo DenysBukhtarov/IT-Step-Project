@@ -23,5 +23,18 @@ export const Contact = () => {
       [category]: value,
     });
   };
-  // continue
+
+  return (
+    <section className="contact" id="connect">
+      <Container>
+        <Row className="align-items-center">
+          <Col size={12} md={6}>
+            <TrackVisibility>
+              {({ isVisible }) => <img src="" alt="" />}
+            </TrackVisibility>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  );
 };
