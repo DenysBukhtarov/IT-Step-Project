@@ -77,10 +77,10 @@ export const NavBar = () => {
                 <a href="http://www.linkedin.com/in/denys-bukhtarov">
                   <img src={navIcon1} alt="" />
                 </a>
-                <a href="#">
+                <a href="https://www.facebook.com/profile.php?id=100001128823871">
                   <img src={navIcon2} alt="" />
                 </a>
-                <a href="#">
+                <a href="https://instagram.com/bukhtarov?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">
                   <img src={navIcon3} alt="" />
                 </a>
               </div>
