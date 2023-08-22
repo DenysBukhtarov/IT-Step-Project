@@ -13,3 +13,5 @@ app.listen(5000, () => console.log("Server Runnig"));
 console.log(process.env.EMAIL_USER);
 console.log(process.env.EMAIL_PASS);
 
+
+router.post()
