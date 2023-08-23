@@ -14,4 +14,21 @@ console.log(process.env.EMAIL_USER);
 console.log(process.env.EMAIL_PASS);
 
 
-router.post()
+router.post("/contact", (req, res) => {
+    const name = req.firstName + req.body.lastName;
+    const email = req.body.email;
+    const message = req.body.message;
+    const phone = req.body.phone;
+    const mail = {
+from: name,
+html: `
+<p>Name: ${name}</p>
+<p>Email: ${email}</p>
+<p>Phone: ${phone}</p>
+<p>Message: ${message}</p>
+`
+    };
+    contactEmail.sendMail(mail, (error) => {
+        
+    })
+})
