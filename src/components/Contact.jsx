@@ -13,7 +13,7 @@ export const Contact = () => {
     message: '',
   };
 
-  const [formDetails, setFormDetails] = useState(formInialDetails);
+  const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState('Send');
   const [status, setStatus] = useState({});
 
@@ -37,7 +37,7 @@ export const Contact = () => {
     setButtonText('Send');
     let result = await response.json();
     setFormDetails(formInitialDetails);
-    if (result.code == 200) {
+    if (result.code === 200) {
       setStatus({ succes: true, message: 'Message sent successfully' });
     } else {
       setStatus({
