@@ -10,6 +10,16 @@ export const Projects = () => {
       title: 'FoodSta',
       description: 'HTMML and CSS project',
     },
+
+    {
+      title: 'Filmoteka',
+      decription: 'Java Script',
+    },
+
+    {
+      title: 'Your Pets',
+      description: 'JS, React, Redux',
+    },
   ];
 
   return (
@@ -27,7 +37,7 @@ export const Projects = () => {
                   <h2>Projects</h2>
                   <p>
                     For a moment , I don't have many projects, but I would like
-                    to present my projects.
+                    to present my three projects.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -36,13 +46,13 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Project One</Nav.Link>
+                        <Nav.Link eventKey="first">FoodSta</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Project Two</Nav.Link>
+                        <Nav.Link eventKey="second">Filmoteka</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Project Three</Nav.Link>
+                        <Nav.Link eventKey="third">Your Pets</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -52,30 +62,13 @@ export const Projects = () => {
                       }
                     >
                       <Tab.Pane eventKey="first">
-                        <Row>
-                          {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
-                          })}
-                        </Row>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="section">
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
+                          You can order different food, what you want. Also, you
+                          do not need to waste your time.{' '}
                         </p>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="third">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
-                      </Tab.Pane>
+                      <Tab.Pane eventKey="second"></Tab.Pane>
+                      <Tab.Pane eventKey="third"></Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
                 </div>
